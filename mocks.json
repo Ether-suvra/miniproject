@@ -1,0 +1,12 @@
+[
+    {
+        "userName": "admin",
+        "role": "admin",
+        "otp": "123456"
+    },
+    {
+        "userName": "suvra",
+        "role": "student",
+        "otp": "123123"
+    }
+]

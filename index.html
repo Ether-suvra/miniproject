@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>xyz School | Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="mortarboard.png" alt="Institute Logo" />
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#" class="link">Academics</a></li>
+            <li><a href="#" class="link">Admission</a></li>
+            <li><a href="alumni.html" class="alumni">Alumni</a></li>
+            <li><a href="#" class="link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="studentBtn">Student</button>
+          <button class="btn" id="adminBtn">Admin</button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+
+      <div class="form-box">
+        <div class="login-container" id="student">
+          <div class="top">
+            <span>Admin? <a href="#" id="adminLink">Sign In</a></span>
+            <header>Student Login</header>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              id="student-username"
+              placeholder="Username or Email"
+            />
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <button class="submit" id="validateStudent">Sign In</button>
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="student-remember" />
+              <label class="stundent-remember-label" for="student-remember">
+                Remember This Device</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="otp-container" id="otp-container" style="display: none">
+          <div class="top">
+            <header>Enter OTP</header>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              id="otp"
+              placeholder="Enter OTP"
+            />
+          </div>
+          <div class="input-box">
+            <button class="submit" id="submitOtp">Verify OTP</button>
+          </div>
+        </div>
+
+        <div class="login-container" id="admin">
+          <div class="top">
+            <span>Student? <a href="#" id="studentLink">Login</a></span>
+            <header>Admin Login</header>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              id="admin-username"
+              placeholder="Username or Email"
+            />
+            <i class="bx bx-envelope"></i>
+          </div>
+          <div class="input-box">
+            <button class="submit" id="validateAdmin">Sign In</button>
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="admin-remember" />
+              <label for="admin-remember"> Remember This Device</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <img src="index images/auditorium.png" alt="auditorium" />
+      </div>
+      <div class="box">
+        <img src="index images/hackathon.png" alt="hackathon" />
+      </div>
+      <div class="box">
+        <img src="index images/campus.png" alt="campus" />
+      </div>
+      <div class="box">
+        <img src="index images/library.png" alt="library" />
+      </div>
+      <div class="box">
+        <img src="index images/sports.png" alt="sports" />
+      </div>
+    </div>
+
+    <div id="about-us" class="about-us">
+      <h2>About Us</h2>
+      <p>
+        We are committed to providing high-quality education and fostering a
+        community of learners.
+      </p>
+      <div id="more-about-content" class="hidden-content">
+        <p>
+          Our institute has a long history of academic excellence and a diverse
+          community of students and educators. We aim to foster growth,
+          creativity, and a passion for learning in every individual.
+        </p>
+        <p>
+          Join us in our journey to make a difference in the world through
+          education and research.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

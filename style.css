@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("backgroundHomePage.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  width: 100%;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+  padding: 10px 30px;
+}
+
+.nav-logo img {
+  max-height: 60px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center; /* Vertically center menu items */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 0 15px; /* Adjust spacing between items */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.nav-menu a.active {
+  border-bottom: none; /* Remove underline for active link */
+}
+
+.nav-menu a:hover {
+  color: #f0f0f0; /* Change color on hover */
+  border-bottom: 2px solid #fff; /* Add underline effect on hover */
+  transition: 0.3s ease; /* Smooth transition */
+}
+
+.nav-button {
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+  margin-left: auto;
+}
+
+.nav-button .btn {
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text in button */
+  margin-right: 15px; /* Space between buttons */
+}
+
+.nav-button .btn:last-child {
+  margin-right: 0px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn.white-btn {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.btn.white-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+  display: none;
+}
+
+/* Ensure the position is relative for smooth sliding effect */
+.form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 420px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Set initial positions of student and admin containers */
+.login-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.5s ease-in-out;
+  top: 0; /* Align them at the same height */
+}
+
+/* Set default positions for smooth transitions */
+#student {
+  left: 0; /* Default to show the student form */
+}
+
+#admin {
+  left: 100%; /* Start with admin form hidden */
+}
+
+.otp-container {
+  display: none;
+}
+
+.top span {
+  font-size: small;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.top span a {
+  font-weight: 500;
+  margin-left: 5px;
+  color: #fff;
+}
+
+header {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+.input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  color: #fff;
+}
+
+.input-field:hover,
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.input-box {
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.submit:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-col .one {
+  display: flex;
+  align-items: center;
+}
+
+.two-col .two {
+  display: flex;
+  align-items: center;
+}
+
+.two-col input[type="checkbox"] {
+  margin-right: 5px;
+}
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  width: 250px;
+  height: 300px;
+  background: transparent;
+  margin: 0px 10px;
+  transition: 1s;
+  display: flex; /* Use flex to center image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+.box img {
+  max-width: 100%; /* Ensure image scales within the box */
+  max-height: 100%; /* Ensure image does not exceed box height */
+  transition: transform 1s; /* Smooth scaling effect */
+}
+
+.box:hover {
+  transform: scale(1.3);
+  background: transparent;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.box:hover img {
+  transform: scale(1.1); /* Slightly scale the image on hover */
+}
+
+#about-us {
+  padding: 50px 20px;
+  background: rgba(39, 39, 39, 0.6); /* Adjust as needed */
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto; /* Center align */
+}
+
+#about-us h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#about-us p {
+  line-height: 1.6;
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-menu {
+    position: initial;
+    margin: 0;
+    transform: initial;
+  }
+
+  .nav-button {
+    margin: initial;
+  }
+  .nav > * {
+    margin-bottom: 10px;
+  }
+  .nav > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+}
